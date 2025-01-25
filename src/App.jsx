@@ -20,6 +20,7 @@ function App() {
         <SkillsSection />
         <ContactSection />
         <FooterSection />
+        <h1>hello</h1>
       </div>
     </DataProvider>
   );
