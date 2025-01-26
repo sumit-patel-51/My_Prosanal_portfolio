@@ -25,12 +25,12 @@ function NavBar() {
             {Object.entries(links).map(([key, value]) => {
               if (key == "contact") {
                 return (
-                  <a href={`#${key}`} className="active">
+                  <a href={`#${key}`} key={key} className="active">
                     {value}
                   </a>
                 );
               } else {
-                return <a href={`#${key}`}>{value}</a>;
+                return <a href={`#${key}`} key={key} >{value}</a>;
               }
             })}
           </div>

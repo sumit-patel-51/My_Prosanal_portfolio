@@ -20,7 +20,7 @@ export const DataProvider = ({ children }) => {
     homeName: "Sumit Sachapara",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nam. ",
-    imageSrc: "/src/assets/profile.png",
+    imageSrc: "/public/profile.png",
   });
 
   // AboutSection
@@ -35,7 +35,7 @@ export const DataProvider = ({ children }) => {
       "Beyond coding, I’m a lifelong learner and a tech enthusiast. In my free time, you’ll find me exploring the latest tech trends, honing my problem-solving skills, or enjoying hobbies like gaming and photography.",
     decsription4:
       "I’m excited to collaborate on projects that make an impact. Let’s connect and create something amazing together!",
-    imageSrc: "/src/assets/profile.png",
+    imageSrc: "/public/profile.png",
   });
 
   // Education Section
