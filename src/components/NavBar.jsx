@@ -30,7 +30,11 @@ function NavBar() {
                   </a>
                 );
               } else {
-                return <a href={`#${key}`} key={key} >{value}</a>;
+                return (
+                  <a href={`#${key}`} key={key}>
+                    {value}
+                  </a>
+                );
               }
             })}
           </div>

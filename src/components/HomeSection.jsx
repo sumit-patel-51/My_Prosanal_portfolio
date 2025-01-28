@@ -13,6 +13,7 @@ function HomeSection() {
         <div className="left-home">
           <h1>Hello, I'm</h1>
           <h2>{homePage.homeName}</h2>
+          <h2>{homePage.devloper}</h2>
           <p>{homePage.description}</p>
           <button>Download CV</button>
         </div>

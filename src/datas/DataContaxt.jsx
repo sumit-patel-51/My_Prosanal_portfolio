@@ -18,9 +18,10 @@ export const DataProvider = ({ children }) => {
   // HomeSection
   const [homePage, setHomePage] = useState({
     homeName: "Sumit Sachapara",
+    devloper: "Web Devloper",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, nam. ",
-    imageSrc: "/public/profile.png",
+      "I'm a passionate Web Developer dedicated to building user-friendly and visually appealing websites.",
+    imageSrc: "profile.png",
   });
 
   // AboutSection
@@ -35,7 +36,7 @@ export const DataProvider = ({ children }) => {
       "Beyond coding, I’m a lifelong learner and a tech enthusiast. In my free time, you’ll find me exploring the latest tech trends, honing my problem-solving skills, or enjoying hobbies like gaming and photography.",
     decsription4:
       "I’m excited to collaborate on projects that make an impact. Let’s connect and create something amazing together!",
-    imageSrc: "/public/profile.png",
+    imageSrc: "profile.png",
   });
 
   // Education Section
