@@ -119,7 +119,7 @@ nav > .manu-btn {
   nav > .right-nav {
     position: absolute;
     top: 5rem;
-    right: 0;
+    left: 0;
     width: 100%;
     overflow: hidden;
     gap: 0;
@@ -190,7 +190,13 @@ nav > .manu-btn {
   color: var(--p-font-color);
 }
 
-.left-home > button {
+.btns {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.down-cv {
   padding: 0.8rem;
   width: 10rem;
   background-color: var(--font-color);
@@ -201,14 +207,56 @@ nav > .manu-btn {
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.2s ease-in;
+  text-align: center;
+  text-decoration: none;
 }
-
-.left-home > button:hover {
-  transform: scale(1.003);
+.down-cv:hover {
+  /* transform: scale(1.003); */
   background-color: white;
   outline: 2px solid var(--font-color);
   color: var(--font-color);
 }
+
+.mycv {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: black;
+  background: rgba(57, 57, 140, 0.532);
+  padding: 1rem;
+  display: none;
+  justify-content: center;
+}
+
+.mycv > label {
+  position:fixed;
+  right:1rem;
+  padding: 0.8rem 1.1rem;
+  background-color: #4635B1;
+  border-radius: 2rem;
+  z-index: 50;
+  font-size: 20px;
+}
+
+.mycv > img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.cvcheck {
+  display: none;
+}
+
+body:has(.cvcheck:checked) .mycv{
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000;
+}
+
 
 .home-section > .right-home {
   width: 50%;
@@ -701,12 +749,15 @@ nav > .manu-btn {
 
 .top-footer > .bottom-top-footer {
   display: flex;
-  gap: 0.7rem;
+  gap: 0.4rem;
 }
 
 .bottom-top-footer > a {
   text-decoration: none;
   color: var(--p-font-color);
+}
+.bottom-top-footer > a:hover {
+  color: rgb(126, 136, 224);
 }
 
 .bottom-top-footer> span{

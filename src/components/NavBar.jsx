@@ -1,7 +1,5 @@
 import { useContext, useState } from "react";
 import { DataContext } from "../datas/DataContaxt";
-
-import { gsap } from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faS, faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 

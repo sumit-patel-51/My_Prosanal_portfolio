@@ -22,6 +22,8 @@ export const DataProvider = ({ children }) => {
     description:
       "I'm a passionate Web Developer dedicated to building user-friendly and visually appealing websites.",
     imageSrc: "profile.png",
+    cvdown:"https://drive.google.com/file/d/195pAZMfJx_7xnAawAD3TOuvYZhPg4oZO/view",
+    cvimage:"Sumit-Resume.png"
   });
 
   // AboutSection
