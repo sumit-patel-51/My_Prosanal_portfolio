@@ -26,14 +26,14 @@ function SkillsSection() {
     gsap.from(skillani2.current, {
       scrollTrigger: {
         trigger:skillani2.current,
-        start:"top 85%",
-        end: "top 85%",
+        start:"top 80%",
+        end: "top 80%",
         scrub: 5
       },
       duration:2,
       opacity:0,
-      y:100,
-      stagger:0.7
+      y:200,
+      stagger:0.5
     })
   },[])
 

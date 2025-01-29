@@ -13,12 +13,13 @@ function NavBar() {
             <FontAwesomeIcon className="i" icon={faS} />
             <h1>{data.titleName}</h1>
           </div>
+            <input type="checkbox" className="check" name="" id="check" />
           <div className="manu-btn">
-            <label form="check" className="btn-manu">
-              <input type="checkbox" className="check" name="" id="" />
+            <label htmlFor="check" className="btn-manu">
               <FontAwesomeIcon className="manu" icon={faBarsStaggered} />
             </label>
           </div>
+          <label htmlFor="check" className="hidden"></label>
           <div className="right-nav">
             {Object.entries(links).map(([key, value]) => {
               if (key == "contact") {

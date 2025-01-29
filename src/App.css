@@ -19,7 +19,7 @@ header > nav {
   display:flex;
   justify-content:center;
   align-items: center;  
-  z-index: 50;
+  z-index: 500;
 }
 
 
@@ -31,13 +31,10 @@ nav > .left-nav {
 
 :root{
   --font-color: #4635B1;
-  /* --border-color:4px solid white; */
-  /* ---box-shadow:0px 7px 7px #9AB3F5, inset 0px 7px 7px #9AB3F5; */
   --background:white;
   /* --home-section:#f5d9fc; */
   --p-font-color:#4635B1;
   ---progres-color:#4635B1;
-  /* --text-shadow:0px 3px 2px rgb(218, 218, 218); */
   --progresBack:#b3a9f7;
 }
 
@@ -130,7 +127,6 @@ nav > .manu-btn {
     transition: all 0.2s ease-in-out;
     z-index: 50;
     transform:rotateX(90deg);
-    
   }
 
   .right-nav > a {
@@ -150,6 +146,14 @@ nav > .manu-btn {
   body:has(.check:checked) nav > .right-nav {
     transform:rotateX(0deg);
     top: 5rem;
+  }
+  body:has(.check:checked) .hidden {
+    background-color:rgba(96, 96, 157, 0.43);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 5rem;
+    left: 0;
   }
 }
 
@@ -233,11 +237,12 @@ nav > .manu-btn {
 .mycv > label {
   position:fixed;
   right:1rem;
-  padding: 0.8rem 1.1rem;
-  background-color: #4635B1;
-  border-radius: 2rem;
+  padding:7px 10px;
+  border: 2px solid white;
+  border-radius:4px;
   z-index: 50;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .mycv > img {

@@ -59,8 +59,8 @@ function AboutSection() {
     tl.from(boxRef3.current, {
       scrollTrigger: {
         trigger: boxRef3.current,
-        start:"top 100%",
-        end:"top 100%",
+        start:"top 90%",
+        end:"top 90%",
         scrub: 4, 
       },
       y:200,
@@ -71,8 +71,8 @@ function AboutSection() {
     tl.from(boxRef4.current, {
       scrollTrigger: {
         trigger: boxRef4.current,
-        start:"top 100%",
-        end:"top 100%",
+        start:"top 90%",
+        end:"top 90%",
         scrub: 4, 
       },
       y:200,
@@ -83,8 +83,8 @@ function AboutSection() {
     tl.from(boxRef5.current, {
       scrollTrigger: {
         trigger: boxRef5.current,
-        start:"top 100%",
-        end:"top 100%",
+        start:"top 90%",
+        end:"top 90%",
         scrub: 4, 
       },
       y:200,
@@ -95,8 +95,8 @@ function AboutSection() {
     tl.from(boxRef6.current, {
       scrollTrigger: {
         trigger: boxRef6.current,
-        start:"top 100%",
-        end:"top 100%",
+        start:"top 90%",
+        end:"top 90%",
         scrub: 4, 
       },
       y:200,
@@ -107,8 +107,8 @@ function AboutSection() {
     tl.from(boxRef7.current, {
       scrollTrigger: {
         trigger: boxRef7.current,
-        start:"top 100%",
-        end:"top 100%",
+        start:"top 90%",
+        end:"top 90%",
         scrub: 4, 
       },
       y:200,

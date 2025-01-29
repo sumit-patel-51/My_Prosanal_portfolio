@@ -16,8 +16,8 @@ function EducationSection() {
     gsap.from(educationani.current, {
       scrollTrigger: {
         trigger: educationani.current,
-        start:"top 90%",
-        end:"top 90%",
+        start:"top 80%",
+        end:"top 80%",
         scrub: 4, 
       },
       y:100,
@@ -28,8 +28,8 @@ function EducationSection() {
     gsap.from(arrRef.current, {
       scrollTrigger: {
         trigger:arrRef.current,
-        start: "top 90%",
-        end: "top 90%",
+        start: "top 80%",
+        end: "top 80%",
         scrub:5
       },
       duration:2,

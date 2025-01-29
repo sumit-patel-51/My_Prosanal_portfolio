@@ -27,8 +27,8 @@ function ContactSection() {
     gsap.from(contactani.current, {
       scrollTrigger: {
         trigger:contactani.current,
-        start:"top 90%",
-        end:"top 90%",
+        start:"top 80%",
+        end:"top 80%",
         scrub:4
       },
       y:100,
@@ -39,8 +39,8 @@ function ContactSection() {
     tl.from(contactani1.current, {
       scrollTrigger: {
         trigger:contactani1.current,
-        start:"top 90%",
-        end:"top 90%",
+        start:"top 80%",
+        end:"top 80%",
         scrub:4
       },
       y:100,
@@ -51,8 +51,8 @@ function ContactSection() {
     tl.from(contactani2.current, {
       scrollTrigger: {
         trigger:contactani2.current,
-        start:"top 90%",
-        end:"top 90%",
+        start:"top 80%",
+        end:"top 80%",
         scrub:4
       },
       y:100,
@@ -87,8 +87,8 @@ function ContactSection() {
     tl.from(contactForm.current, {
       scrollTrigger: {
         trigger:contactForm.current,
-        start:"top 90%",
-        end:"top 90%",
+        start:"top 80%",
+        end:"top 80%",
         scrub:4
       },
       y:100,
