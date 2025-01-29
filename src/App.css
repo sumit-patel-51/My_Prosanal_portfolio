@@ -703,6 +703,15 @@ body:has(.cvcheck:checked) .mycv{
   font-size: 1rem;
 }
 
+.message-box {
+  background-color: rgb(21, 146, 21);
+  color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 5px;
+  box-shadow: 0 3px 7px rgb(137, 137, 137);
+}
+
 .second-second-contact > form button:hover {
   background-color: white;
   outline: 2px solid var(--font-color);
