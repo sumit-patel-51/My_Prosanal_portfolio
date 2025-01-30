@@ -51,14 +51,14 @@ export const DataProvider = ({ children }) => {
     },
     {
       degree: "Web Devloper",
-      univarsity: "Kodnest Tutaion",
+      univarsity: "KodNest",
       year: "2024-2025",
       icon: "faCalendarDays",
     },
     {
-      degree: "Bachelor of Computer Application(BCA)",
-      univarsity: "MKBU University",
-      year: "2021-2024",
+      degree: "12th",
+      univarsity: "Dakshinamurti Vinay Mandir School",
+      year: "2020-2021",
       icon: "faCalendarDays",
     },
   ]);
