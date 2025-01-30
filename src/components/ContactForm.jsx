@@ -1,75 +1,92 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
-  const [subject, setSubject] = useState("");
-  const [massege, setMessage] = useState("");
-  const [sentMessage, setSentMessage] = useState("")
-  const [padding, setPadding] = useState("")
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    number: "",
+    message: "",
+  });
+  const [sentMessage, setSentMessage] = useState("");
+  const [padding, setPadding] = useState("");
 
-  const hadleSubmit = (e) => {
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value})
+  }
+
+  const hadleSubmit = async (e) => {
     e.preventDefault();
-
-    console.log("hello");
-    setName("");
-    setEmail("");
-    setNumber("");
-    setSubject("");
-    setMessage("");
-    setPadding("0.5rem")
+    const response = await emailjs.send(
+      "service_i5vfhc4",
+      "template_ou88ggx",
+      formData,
+      "Fm0Ba7Db4uHtPMhge"
+    );
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      number: "",
+      message: "",
+    });
+    setPadding("0.5rem");
     setSentMessage("Message sent successfully ! Thank You...");
-    setTimeout(()=> setSentMessage(""), 3000);
-    setTimeout(()=> setPadding(""), 3000);
+    setTimeout(() => setSentMessage(""), 3000);
+    setTimeout(() => setPadding(""), 3000);
   };
-
 
   return (
     <>
-    
       <form onSubmit={hadleSubmit}>
         <input
           type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Your Name" required
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="Your Name"
+          required
         />
         <input
           type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
           placeholder="Your Email"
-          name=""
           id=""
           required
         />
         <input
           type="number"
-          value={number}
-          onChange={(e) => setNumber(e.target.value)}
+          name="number"
+          value={formData.number}
+          onChange={handleChange}
           placeholder="Your Phone"
           minLength={10}
           required
         />
         <input
           type="text"
-          value={subject}
-          onChange={(e) => setSubject(e.target.value)}
+          name="subject"
+          value={formData.subject}
+          onChange={handleChange}
           placeholder="Subject"
           required
         />
         <textarea
           className="message"
-          name=""
+          name="message"
           placeholder="Message"
           id=""
-          value={massege}
-          onChange={(e) => setMessage(e.target.value)}
+          value={formData.message}
+          onChange={handleChange}
         ></textarea>
         <button>Send Message</button>
       </form>
-      <div className="message-box" style={{padding:`${padding}`}}>{sentMessage}</div>
+      <div className="message-box" style={{ padding: `${padding}` }}>
+        {sentMessage}
+      </div>
     </>
   );
 }
