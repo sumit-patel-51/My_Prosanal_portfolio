@@ -51,7 +51,7 @@ function EducationSection() {
                 <div key={key} ref={(e)=>arrRef.current[key] = e}  className="first-box">
                   <h3>{elm.degree}</h3>
                   <p>{elm.univarsity}</p>
-                  <p>Graduation Year: <FontAwesomeIcon icon={faCalendarDays}/> {elm.year}</p>
+                  <p>Duration: <FontAwesomeIcon icon={faCalendarDays}/> {elm.year}</p>
                 </div>
               ))
             }
