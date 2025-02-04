@@ -22,7 +22,7 @@ export const DataProvider = ({ children }) => {
     description:
       "I'm a passionate Web Developer dedicated to building user-friendly and visually appealing websites.",
     imageSrc: "my.png",
-    cvdown:"https://drive.google.com/file/d/195pAZMfJx_7xnAawAD3TOuvYZhPg4oZO/view",
+    cvdown:"https://drive.google.com/file/d/1aUxl8yRigGeMtSnSHMB32iJXXwnHkqD5/view",
     cvimage:"Sumit-Resume.png"
   });
 
