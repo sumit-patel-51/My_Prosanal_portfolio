@@ -21,7 +21,7 @@ export const DataProvider = ({ children }) => {
     devloper: "Web Devloper",
     description:
       "I'm a passionate Web Developer dedicated to building user-friendly and visually appealing websites.",
-    imageSrc: "profile.png",
+    imageSrc: "my.png",
     cvdown:"https://drive.google.com/file/d/195pAZMfJx_7xnAawAD3TOuvYZhPg4oZO/view",
     cvimage:"Sumit-Resume.png"
   });
@@ -38,7 +38,7 @@ export const DataProvider = ({ children }) => {
       "Beyond coding, I’m a lifelong learner and a tech enthusiast. In my free time, you’ll find me exploring the latest tech trends, honing my problem-solving skills, or enjoying hobbies like gaming and photography.",
     decsription4:
       "I’m excited to collaborate on projects that make an impact. Let’s connect and create something amazing together!",
-    imageSrc: "profile.png",
+    imageSrc: "image.png",
   });
 
   // Education Section
