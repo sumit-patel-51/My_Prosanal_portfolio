@@ -529,13 +529,14 @@ body:has(.cvcheck:checked) .mycv{
 .second-skill > .skill-box {
   flex-grow: 1;
   min-width: 49%;
-  padding: 2rem 0.5rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
-}
+  border-radius: 1rem;
+  box-shadow: 0px 3px 10px rgb(199, 199, 199);}
 
 .skill-box > p {
   width: 100%;
