@@ -754,11 +754,13 @@ body:has(.cvcheck:checked) .mycv{
   transition: all 0.3s ease-in;
   display: flex;
   align-items: center;
+  box-shadow: 0px 3px 5px #4635B1;
 }
 
 .top-top-footer > a:hover {
   outline: 2px solid #7579E7;
   background-color: white;
+  transform: scale(1.1);
   color: var(--font-color);
 }
 
