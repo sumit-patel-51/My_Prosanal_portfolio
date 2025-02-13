@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+import image from "../assets/my.png";
 
 export const DataContext = createContext();
 
@@ -12,6 +13,7 @@ export const DataProvider = ({ children }) => {
     about: "About",
     education: "Education",
     skills: "Skills",
+    projects: "Projects",
     contact: "Contact",
   });
 
@@ -97,6 +99,19 @@ export const DataProvider = ({ children }) => {
     },
   ]);
 
+  // ProjectSection
+
+  const [projectSection, setProjectSection] = useState([
+    {
+      id:1,
+      type:"FronEnd",
+      projectName: "Food Delivery",
+      visitLink:"https://fooddeliverywebsite-51.netlify.app/",
+      gitLink:"https://github.com/sumit-patel-51/Food_delivery_website",
+      imageSrc:"food.png"
+    },
+  ])
+
   // ContactSection
   const [contactSection, setContactSection] = useState({
     description:
@@ -126,6 +141,7 @@ export const DataProvider = ({ children }) => {
         aboutSection,
         educationSection,
         skillSection,
+        projectSection,
         contactSection,
         footerSection,
       }}
