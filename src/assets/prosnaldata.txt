@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+import image from "../assets/my.png";
 
 export const DataContext = createContext();
 
@@ -12,6 +13,7 @@ export const DataProvider = ({ children }) => {
     about: "About",
     education: "Education",
     skills: "Skills",
+    projects: "Projects",
     contact: "Contact",
   });
 
@@ -21,8 +23,8 @@ export const DataProvider = ({ children }) => {
     devloper: "Web Devloper",
     description:
       "I'm a passionate Web Developer dedicated to building user-friendly and visually appealing websites.",
-    imageSrc: "profile.png",
-    cvdown:"https://drive.google.com/file/d/195pAZMfJx_7xnAawAD3TOuvYZhPg4oZO/view",
+    imageSrc: "my.png",
+    cvdown:"https://drive.google.com/file/d/1aUxl8yRigGeMtSnSHMB32iJXXwnHkqD5/view",
     cvimage:"Sumit-Resume.png"
   });
 
@@ -38,7 +40,7 @@ export const DataProvider = ({ children }) => {
       "Beyond coding, I’m a lifelong learner and a tech enthusiast. In my free time, you’ll find me exploring the latest tech trends, honing my problem-solving skills, or enjoying hobbies like gaming and photography.",
     decsription4:
       "I’m excited to collaborate on projects that make an impact. Let’s connect and create something amazing together!",
-    imageSrc: "profile.png",
+    imageSrc: "image.png",
   });
 
   // Education Section
@@ -97,6 +99,27 @@ export const DataProvider = ({ children }) => {
     },
   ]);
 
+  // ProjectSection
+
+  const [projectSection, setProjectSection] = useState([
+    {
+      id:1,
+      type:"FronEnd",
+      projectName: "Food Delivery",
+      visitLink:"https://fooddeliverywebsite-51.netlify.app/",
+      gitLink:"https://github.com/sumit-patel-51/Food_delivery_website",
+      imageSrc:"food.png"
+    },
+    {
+      id:2,
+      type:"FronEnd",
+      projectName: "Yami Recipe",
+      visitLink:"https://yamirecipe.netlify.app/",
+      gitLink:"https://github.com/sumit-patel-51/Yami-Recipe-Website",
+      imageSrc:"recipe.webp"
+    },
+  ])
+
   // ContactSection
   const [contactSection, setContactSection] = useState({
     description:
@@ -126,6 +149,7 @@ export const DataProvider = ({ children }) => {
         aboutSection,
         educationSection,
         skillSection,
+        projectSection,
         contactSection,
         footerSection,
       }}

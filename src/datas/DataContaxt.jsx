@@ -110,6 +110,14 @@ export const DataProvider = ({ children }) => {
       gitLink:"https://github.com/sumit-patel-51/Food_delivery_website",
       imageSrc:"food.png"
     },
+    {
+      id:2,
+      type:"FronEnd",
+      projectName: "Yami Recipe",
+      visitLink:"https://yamirecipe.netlify.app/",
+      gitLink:"https://github.com/sumit-patel-51/Yami-Recipe-Website",
+      imageSrc:"recipe.webp"
+    },
   ])
 
   // ContactSection
