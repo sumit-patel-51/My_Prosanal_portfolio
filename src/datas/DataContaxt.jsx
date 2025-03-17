@@ -24,8 +24,8 @@ export const DataProvider = ({ children }) => {
     description:
       "I'm a passionate Web Developer dedicated to building user-friendly and visually appealing websites.",
     imageSrc: "my.png",
-    cvdown:"https://drive.google.com/file/d/1aUxl8yRigGeMtSnSHMB32iJXXwnHkqD5/view",
-    cvimage:"Sumit-Resume.png"
+    cvdown:"https://drive.google.com/file/d/1pQlNQwLGfpKP_s7Wgi3_RxcfJ3lMZwOq/view?usp=sharing",
+    cvimage:"https://i.ibb.co/zWpVgZcg/Screenshot-2025-03-17-084028.png"
   });
 
   // AboutSection
@@ -86,6 +86,11 @@ export const DataProvider = ({ children }) => {
       skillName: "React Js",
       firstWidth: "59%",
       progressWidth: "60%",
+    },
+    {
+      skillName: "Tailwind CSS",
+      firstWidth: "69%",
+      progressWidth: "70%",
     },
     {
       skillName: "Core Java",
